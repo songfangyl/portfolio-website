@@ -26,6 +26,9 @@ const config = {
       },
     },
     extend: {
+      projectCardBg: {
+        'custom-gradient': 'linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,0,143,1) 46%, rgba(103,103,255,1) 100%)',
+      },
       colors: {
         black: {
           DEFAULT: "#000",
