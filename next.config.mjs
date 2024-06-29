@@ -2,6 +2,7 @@
 const nextConfig = {
     output: 'export',
     basePath: "/Portfolio-Website",
+    reactStrictMode: true,
     typescript: {
         ignoreBuildErrors: true,
     }
