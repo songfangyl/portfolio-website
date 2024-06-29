@@ -10,7 +10,6 @@ export const navItems = [
 
   // Set the baseURL accordingly
   const baseURL = isGitHubPages ? '/portfolio-website' : '';
-
   export const gridItems = [
     {
       id: 1,
@@ -19,7 +18,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-7 md:row-span-10 lg:min-h-[60vh] md:h-[70vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: `${baseURL}/b1.svg`,
+      img: `portfolio-website/b1.svg`,
       spareImg: "",
     },
     {
