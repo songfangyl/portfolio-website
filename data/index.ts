@@ -5,6 +5,12 @@ export const navItems = [
     { name: "Contact", link: "#contact" },
   ];
   
+  // Check if 'window' is defined to avoid errors in non-browser environments
+  const isGitHubPages = typeof window !== 'undefined' ? window.location.hostname === 'songfangyl.github.io' : false;
+
+  // Set the baseURL accordingly
+  const baseURL = isGitHubPages ? '/portfolio-website' : '';
+
   export const gridItems = [
     {
       id: 1,
@@ -13,7 +19,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-7 md:row-span-10 lg:min-h-[60vh] md:h-[70vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: "/b1.svg",
+      img: `${baseURL}/b1.svg`,
       spareImg: "",
     },
     {
@@ -43,8 +49,8 @@ export const navItems = [
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
-      img: "/grid.svg",
-      spareImg: "/b4.svg",
+      img: `${baseURL}/grid.svg`,
+      spareImg: `${baseURL}/b4.svg`,
     },
   
     {
@@ -54,8 +60,8 @@ export const navItems = [
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
-      img: "/b5.svg",
-      spareImg: "/grid.svg",
+      img: `${baseURL}/b5.svg`,
+      spareImg: `${baseURL}/grid.svg`,
     },
     {
       id: 6,
@@ -74,8 +80,8 @@ export const navItems = [
       id: 1,
       title: "3D Solar System Planets to Explore",
       des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: "/p1.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
+      img: `${baseURL}/p1.svg`,
+      iconLists: [`${baseURL}/re.svg`, `${baseURL}/tail.svg`, `${baseURL}/ts.svg`, `${baseURL}/three.svg`, `${baseURL}/fm.svg`],
       link: "https://github.com/adrianhajdin?tab=repositories",
     },
     {
