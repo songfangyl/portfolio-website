@@ -1,3 +1,5 @@
+import { link } from "fs";
+
 export const navItems = [
     { name: "About", link: "#about" },
     { name: "Projects", link: "#projects" },
@@ -5,11 +7,8 @@ export const navItems = [
     { name: "Contact", link: "#contact" },
   ];
   
-  // Check if 'window' is defined to avoid errors in non-browser environments
-  const isGitHubPages = typeof window !== 'undefined' ? window.location.hostname === 'songfangyl.github.io' : false;
-
   // Set the baseURL accordingly
-  const baseURL = isGitHubPages ? '/portfolio-website' : '';
+  const baseURL = '/portfolio-website';
   export const gridItems = [
     {
       id: 1,
@@ -18,7 +17,7 @@ export const navItems = [
       className: "lg:col-span-3 md:col-span-7 md:row-span-10 lg:min-h-[60vh] md:h-[70vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
-      img: `/portfolio-website/b1.svg`,
+      img: `${baseURL}/b1.svg`,
       spareImg: "",
     },
     {
@@ -87,24 +86,24 @@ export const navItems = [
       id: 2,
       title: "Yoom - Video Conferencing App",
       des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: "/p2.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
+      img: `${baseURL}/p2.svg`,
+      iconLists: [`${baseURL}/next.svg`, `${baseURL}/tail.svg`, `${baseURL}/ts.svg`, `${baseURL}/stream.svg`, `${baseURL}/c.svg`],
       link: "https://github.com/adrianhajdin/zoom-clone",
     },
     {
       id: 3,
       title: "AI Image SaaS - Canva Application",
       des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: "/p3.svg",
-      iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
+      img: `${baseURL}/p3.svg`,
+      iconLists: [`${baseURL}/re.svg`, `${baseURL}/tail.svg`, `${baseURL}/ts.svg`, `${baseURL}/three.svg`, `${baseURL}/c.svg`],
       link: "https://github.com/adrianhajdin/ai_saas_app",
     },
     {
       id: 4,
       title: "Animated Apple Iphone 3D Website",
       des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: "/p4.svg",
-      iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
+      img: `${baseURL}/p4.svg`,
+      iconLists: [`${baseURL}/next.svg`, `${baseURL}/tail.svg`, `${baseURL}/ts.svg`, `${baseURL}/three.svg`, `${baseURL}/gsap.svg`],
       link: "https://github.com/adrianhajdin/iphone",
     },
   ];
@@ -146,32 +145,32 @@ export const navItems = [
     {
       id: 1,
       name: "cloudinary",
-      img: "/cloud.svg",
-      nameImg: "/cloudName.svg",
+      img: `${baseURL}/cloud.svg`,
+      nameImg: `${baseURL}/cloudName.svg`,
     },
     {
       id: 2,
       name: "appwrite",
-      img: "/app.svg",
-      nameImg: "/appName.svg",
+      img: `${baseURL}/app.svg`,
+      nameImg: `${baseURL}/appName.svg`,
     },
     {
       id: 3,
       name: "HOSTINGER",
-      img: "/host.svg",
-      nameImg: "/hostName.svg",
+      img: `${baseURL}/host.svg`,
+      nameImg: `${baseURL}/hostName.svg`,
     },
     {
       id: 4,
       name: "stream",
-      img: "/s.svg",
-      nameImg: "/streamName.svg",
+      img: `${baseURL}/s.svg`,
+      nameImg: `${baseURL}/streamName.svg`,
     },
     {
       id: 5,
       name: "docker.",
-      img: "/dock.svg",
-      nameImg: "/dockerName.svg",
+      img: `${baseURL}/dock.svg`,
+      nameImg: `${baseURL}/dockerName.svg`,
     },
   ];
   
@@ -181,42 +180,45 @@ export const navItems = [
       title: "Frontend Engineer Intern",
       desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: `${baseURL}/exp1.svg`,
     },
     {
       id: 2,
       title: "Mobile App Dev - JSM Tech",
       desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
+      thumbnail: `${baseURL}/exp2.svg`,
     },
     {
       id: 3,
       title: "Freelance App Dev Project",
       desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
+      thumbnail: `${baseURL}/exp3.svg`,
     },
     {
       id: 4,
       title: "Lead Frontend Developer",
       desc: "Developed and maintained user-facing features using modern frontend technologies.",
       className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: `${baseURL}/exp4.svg`,
     },
   ];
   
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      img: `${baseURL}/git.svg`,
+      link: "https://github.com/songfangyl/",
     },
     {
       id: 2,
-      img: "/twit.svg",
+      img: `${baseURL}/insta.svg`,
+      link: "https://www.instagram.com/fangyl_10/",
     },
     {
       id: 3,
-      img: "/link.svg",
+      img: `${baseURL}/link.svg`,
+      link: "https://www.linkedin.com/in/song-fang-yi-259400258",
     },
   ];
