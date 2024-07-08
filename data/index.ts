@@ -6,12 +6,12 @@ export const navItems = [
   ];
   
   // Set the baseURL accordingly
-  const baseURL = '/portfolio-website';
+  const baseURL = '';
   export const gridItems = [
     {
       id: 1,
-      title: "I prioritize client collaboration, fostering open communication ",
-      description: "",
+      title: "Adaptable and Flexible",
+      description: "Thriving in dynamic environments and embracing change with a positive attitude.",
       className: "lg:col-span-3 md:col-span-7 md:row-span-10 lg:min-h-[60vh] md:h-[70vh]",
       imgClassName: "w-full h-full",
       titleClassName: "justify-end",
@@ -51,8 +51,8 @@ export const navItems = [
   
     {
       id: 5,
-      title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
+      title: "Passionate Learner",
+      description: "Always eager to learn and grow, looking for opportunities.",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -61,7 +61,7 @@ export const navItems = [
     },
     {
       id: 6,
-      title: "Do you want to start a project together?",
+      title: "Get in Touch Now!",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
@@ -74,35 +74,35 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
-      title: "3D Solar System Planets to Explore",
-      des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-      img: `${baseURL}/p1.svg`,
-      iconLists: [`${baseURL}/re.svg`, `${baseURL}/tail.svg`, `${baseURL}/ts.svg`, `${baseURL}/three.svg`, `${baseURL}/fm.svg`],
-      link: "https://github.com/adrianhajdin?tab=repositories",
+      title: "Course Team Project - Contact Book",
+      des: "Created a Contact Book in Java, following software engineering principles to enhance code readability and maintainability.",
+      img: `${baseURL}/tp.svg`, // Replace with an appropriate image URL
+      iconLists: [`${baseURL}/java.svg`, `${baseURL}/git.svg`, `${baseURL}/junit.svg`, `${baseURL}/oop.svg`], // Replace with actual tech stack icons
+      link: "https://github.com/songfangyl/Team-Project-EzContact", // Replace with actual project link if available
     },
     {
       id: 2,
-      title: "Yoom - Video Conferencing App",
-      des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-      img: `${baseURL}/p2.svg`,
-      iconLists: [`${baseURL}/next.svg`, `${baseURL}/tail.svg`, `${baseURL}/ts.svg`, `${baseURL}/stream.svg`, `${baseURL}/c.svg`],
-      link: "https://github.com/adrianhajdin/zoom-clone",
+      title: "NiHao - Task Management Program",
+      des: "A comprehensive task management program with features to add, delete, mark, unmark, and search tasks.",
+      img: `${baseURL}/nihao.svg`,
+      iconLists: [`${baseURL}/java.svg`, `${baseURL}/git.svg`, `${baseURL}/junit.svg`, `${baseURL}/oop.svg`],
+      link: "https://github.com/songfangyl/Task-Manager",
     },
     {
       id: 3,
-      title: "AI Image SaaS - Canva Application",
-      des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-      img: `${baseURL}/p3.svg`,
-      iconLists: [`${baseURL}/re.svg`, `${baseURL}/tail.svg`, `${baseURL}/ts.svg`, `${baseURL}/three.svg`, `${baseURL}/c.svg`],
-      link: "https://github.com/adrianhajdin/ai_saas_app",
+      title: "Hackathon AI Model",
+      des: "Utilized coding and AI skills to build a model that finds optimized solutions for real-life problems.",
+      img: `${baseURL}/busicase.svg`,
+      iconLists: [`${baseURL}/python.svg`, `${baseURL}/oop.svg`],
+      link: "https://github.com/songfangyl/BusiCase",
     },
     {
       id: 4,
-      title: "Animated Apple Iphone 3D Website",
-      des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-      img: `${baseURL}/p4.svg`,
-      iconLists: [`${baseURL}/next.svg`, `${baseURL}/tail.svg`, `${baseURL}/ts.svg`, `${baseURL}/three.svg`, `${baseURL}/gsap.svg`],
-      link: "https://github.com/adrianhajdin/iphone",
+      title: "Pandemonium - 2D Platformer Game",
+      des: "A complete 2D platformer game developed using C# and Unity, featuring game mechanisms, skill trees, and more, built with OOP principles.",
+      img: `${baseURL}/game.svg`,
+      iconLists: [`${baseURL}/csharp.svg`, `${baseURL}/unity.svg`, `${baseURL}/oop.svg`], 
+      link: "https://github.com/songfangyl/Pandemonium-2D-Platformer",
     },
   ];
   
@@ -175,31 +175,31 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Backend Developer at Ant International",
+      desc: "Designed and implemented micro-services using Spring Boot, conducted system analysis and database table design.",
       className: "md:col-span-2",
       thumbnail: `${baseURL}/exp1.svg`,
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-      className: "md:col-span-2", // change to md:col-span-2
+      title: "Software Developer Intern at All Round Square",
+      desc: "Designed website appearance using JavaScript, HTML, and CSS for responsiveness, and implemented dynamic content rendering with Jinja syntax and jQuery.",
+      className: "md:col-span-2",
       thumbnail: `${baseURL}/exp2.svg`,
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-      className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: `${baseURL}/exp3.svg`,
+      title: "Team Lead, King Edward VII Hall Web",
+      desc: "Led a team of 8 members to maintain and update hall landing page, developed a new camera and equipment borrowing system.",
+      className: "md:col-span-2",
+      thumbnail: `${baseURL}/exp4.svg`,
     },
     {
       id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
+      title: "Teaching Assistant at NUS",
+      desc: "Guided two classes of approximately 20 undergraduate students during lab sessions, enhanced students' understanding of core concepts in Computer Organization.",
       className: "md:col-span-2",
-      thumbnail: `${baseURL}/exp4.svg`,
+      thumbnail: `${baseURL}/exp3.svg`,
     },
   ];
   
