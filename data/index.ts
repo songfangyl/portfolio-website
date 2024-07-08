@@ -6,7 +6,7 @@ export const navItems = [
   ];
   
   // Set the baseURL accordingly
-  const baseURL = '/portfolio-website';
+  const baseURL = '';
   export const gridItems = [
     {
       id: 1,
