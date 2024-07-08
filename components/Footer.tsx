@@ -10,12 +10,13 @@ const Footer = () => {
         <footer className="w-full pt-20 pb-10" id="contact">
             <div className="flex flex-col items-center">
                 <h1 className="heading lg:max-w-[45vw]">
-                    Ready to take <span className="text-purple">your</span>{" "}
-                    digital presence to the next level?
+                    Ready to drive{" "}
+                    <span className="text-purple">impactful change</span>{" "}
+                    together?
                 </h1>
                 <p className="text-white-200 md:mt-10 my-5 text-center">
-                    Reach out to me today and let&apos;s how I can help you
-                    achieve your goals.
+                    Interested in collaborating on a project or just want to
+                    connect? Feel free to reach out!
                 </p>
                 <a href="mailto:songfangyi1210@gmail.com">
                     <BorderButton
@@ -31,7 +32,7 @@ const Footer = () => {
                 </p>
                 <div className="flex items-center md:gap-3 gap-6">
                     {socialMedia.map((profile) => (
-                        <a href={profile.link}>
+                        <a key={profile.id} href={profile.link}>
                             <div
                                 key={profile.id}
                                 className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-150 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 "
