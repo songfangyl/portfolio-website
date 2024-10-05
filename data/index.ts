@@ -74,6 +74,15 @@ export const navItems = [
   export const projects = [
     {
       id: 1,
+      title: "PeerPrep - Peer Interview Prep Platform",
+      des: "PeerPrep is a platform designed for peer interview preparation, enabling users to practice and improve their interview \
+      skills through mock interviews and feedback from peers.",
+      img: `${baseURL}/PeerPrep.svg`,
+      iconLists: [`${baseURL}/javascript.svg`, `${baseURL}/docker.svg`, `${baseURL}/react.svg`, `${baseURL}/git.svg`],
+      link: "https://github.com/songfangyl/PeerPrep",
+    },
+    {
+      id: 2,
       title: "Course Team Project - Contact Book",
       des: "Created a Contact Book in Java, following software engineering principles to enhance code readability and maintainability.",
       img: `${baseURL}/tp.svg`, // Replace with an appropriate image URL
@@ -81,20 +90,12 @@ export const navItems = [
       link: "https://github.com/songfangyl/Team-Project-EzContact", // Replace with actual project link if available
     },
     {
-      id: 2,
+      id: 3,
       title: "NiHao - Task Management Program",
       des: "A comprehensive task management program with features to add, delete, mark, unmark, and search tasks.",
       img: `${baseURL}/nihao.svg`,
       iconLists: [`${baseURL}/java.svg`, `${baseURL}/git.svg`, `${baseURL}/junit.svg`, `${baseURL}/oop.svg`],
       link: "https://github.com/songfangyl/Task-Manager",
-    },
-    {
-      id: 3,
-      title: "Hackathon AI Model",
-      des: "Utilized coding and AI skills to build a model that finds optimized solutions for real-life problems.",
-      img: `${baseURL}/busicase.svg`,
-      iconLists: [`${baseURL}/python.svg`, `${baseURL}/oop.svg`],
-      link: "https://github.com/songfangyl/BusiCase",
     },
     {
       id: 4,
@@ -178,28 +179,28 @@ export const navItems = [
       title: "Backend Developer at Ant International",
       desc: "Designed and implemented micro-services using Spring Boot, conducted system analysis and database table design.",
       className: "md:col-span-2",
-      thumbnail: `${baseURL}/exp1.svg`,
+      thumbnail: `${baseURL}/ant.svg`,
     },
     {
       id: 2,
-      title: "Software Developer Intern at All Round Square",
-      desc: "Designed website appearance using JavaScript, HTML, and CSS for responsiveness, and implemented dynamic content rendering with Jinja syntax and jQuery.",
+      title: "Software Developer at SimpleAI",
+      desc: "In charge of integrating an embedding model into existing systems and enhancing overall functionality.",
       className: "md:col-span-2",
-      thumbnail: `${baseURL}/exp2.svg`,
+      thumbnail: `${baseURL}/simpleaiLogo.svg`,
     },
     {
       id: 3,
-      title: "Team Lead, King Edward VII Hall Web",
-      desc: "Led a team of 8 members to maintain and update hall landing page, developed a new camera and equipment borrowing system.",
+      title: "Software Developer Intern at All RoundSquare",
+      desc: "Designed website appearance using JavaScript, HTML, and CSS for responsiveness, and implemented dynamic content rendering with Jinja syntax and jQuery.",
       className: "md:col-span-2",
-      thumbnail: `${baseURL}/exp4.svg`,
+      thumbnail: `${baseURL}/exp1.svg`,
     },
     {
       id: 4,
       title: "Teaching Assistant at NUS",
-      desc: "Guided two classes of approximately 20 undergraduate students during lab sessions, enhanced students' understanding of core concepts in Computer Organization.",
+      desc: "Guided two classes of approximately 20 undergraduate students during lab sessions, enhancing students' understanding of core concepts in Computer Organization.",
       className: "md:col-span-2",
-      thumbnail: `${baseURL}/exp3.svg`,
+      thumbnail: `${baseURL}/nusLogo.svg`,
     },
   ];
   
